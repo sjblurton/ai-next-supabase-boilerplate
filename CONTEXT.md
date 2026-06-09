@@ -52,16 +52,16 @@ _Avoid_: CI step, pipeline check, lint pass
 
 The following skills are installed globally and should be invoked when relevant:
 
-| Skill | When to use |
-|-------|------------|
-| `tdd` (Matt Pocock) | Writing any new feature — failing test first, always |
-| `zod-v4` | Any time Zod schemas are written or reviewed — prevents v3 deprecation patterns |
-| `ui-ux-review` | Reviewing Presentation Components, Atoms, Molecules, Organisms |
-| `grill-with-docs` | Stress-testing a new plan or design decision |
+| Skill               | When to use                                                                     |
+| ------------------- | ------------------------------------------------------------------------------- |
+| `tdd` (Matt Pocock) | Writing any new feature — failing test first, always                            |
+| `zod-v4`            | Any time Zod schemas are written or reviewed — prevents v3 deprecation patterns |
+| `ui-ux-review`      | Reviewing Presentation Components, Atoms, Molecules, Organisms                  |
+| `grill-with-docs`   | Stress-testing a new plan or design decision                                    |
 
 The following skills may need to be installed or written:
 
-| Skill | Status |
-|-------|--------|
-| `db-migration` | Search skill.sh for a Drizzle migration skill; write custom if none suitable |
+| Skill             | Status                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| `db-migration`    | Search skill.sh for a Drizzle migration skill; write custom if none suitable          |
 | `storybook-story` | Search skill.sh for a Storybook + play functions skill; write custom if none suitable |

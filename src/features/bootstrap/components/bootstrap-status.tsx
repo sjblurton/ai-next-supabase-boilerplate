@@ -24,7 +24,10 @@ export function BootstrapStatus() {
 
       <ul className="mt-6 space-y-3">
         {checks.map((check) => (
-          <li key={check} className="flex items-center gap-3 text-sm md:text-base">
+          <li
+            key={check}
+            className="flex items-center gap-3 text-sm md:text-base"
+          >
             <CheckCircle2 className="h-4 w-4 text-emerald-600" />
             <span>{check}</span>
           </li>

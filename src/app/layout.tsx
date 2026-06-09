@@ -1,6 +1,6 @@
+import { AppToaster } from "@/components/providers/app-toaster";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { AppToaster } from "@/components/providers/app-toaster";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AI Next Supabase Boilerplate",
-  description: "Bootstrap foundation for a Next.js + Supabase vertical-slice app",
+  description:
+    "Bootstrap foundation for a Next.js + Supabase vertical-slice app",
 };
 
 export default function RootLayout({

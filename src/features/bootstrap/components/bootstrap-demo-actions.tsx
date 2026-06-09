@@ -1,8 +1,8 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { Database, Server, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 
 export function BootstrapDemoActions() {
   return (
@@ -21,7 +21,8 @@ export function BootstrapDemoActions() {
         variant="secondary"
         onClick={() => {
           toast("Server data layer baseline", {
-            description: "Server Components + Server Actions tracer slice can start.",
+            description:
+              "Server Components + Server Actions tracer slice can start.",
             icon: <Server className="h-4 w-4" />,
           });
         }}

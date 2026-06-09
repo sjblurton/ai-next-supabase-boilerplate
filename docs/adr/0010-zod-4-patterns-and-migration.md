@@ -32,12 +32,12 @@ Zod 4 uses `{ error: "..." }` — not the string shorthand and not `{ message: "
 
 ```ts
 // ❌
-z.string().min(1, "Required")
-z.string().min(1, { message: "Required" })
+z.string().min(1, "Required");
+z.string().min(1, { message: "Required" });
 
 // ✅
-z.string().min(1, { error: "Required" })
-z.email({ error: "Invalid email address" })
+z.string().min(1, { error: "Required" });
+z.email({ error: "Invalid email address" });
 ```
 
 ## Skill
