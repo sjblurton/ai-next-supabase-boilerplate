@@ -39,6 +39,8 @@ Visit http://localhost:3000 to confirm the bootstrap baseline route renders.
 
 - `pnpm dev` — run local app
 - `pnpm build` — production build
+- `pnpm format` — format the repo with Prettier
+- `pnpm format:check` — verify formatting without writing changes
 - `pnpm lint` — run ESLint
 - `pnpm typecheck` — run TypeScript checks
 - `pnpm test` — run Vitest once
