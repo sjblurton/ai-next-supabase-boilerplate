@@ -18,8 +18,14 @@ describe("CI workflow", () => {
     expect(workflow).toContain("test:");
     expect(workflow).toContain("needs: lint");
     expect(workflow).toContain("run: pnpm test --coverage");
-    expect(workflow).toContain("visual-regression:");
+    expect(workflow).toContain("build:");
     expect(workflow).toContain("needs: test");
+    expect(workflow).toContain("run: pnpm build");
+    expect(workflow).toContain("e2e:");
+    expect(workflow).toContain("needs: build");
+    expect(workflow).toContain("run: pnpm test:e2e");
+    expect(workflow).toContain("visual-regression:");
+    expect(workflow).toContain("needs: e2e");
   });
 });
 
@@ -43,6 +49,8 @@ describe("CI documentation", () => {
     expect(readme).toContain("typecheck");
     expect(readme).toContain("lint");
     expect(readme).toContain("test --coverage");
+    expect(readme).toContain("build");
+    expect(readme).toContain("test:e2e");
     expect(readme).toContain("visual regression");
     expect(readme).toContain("80%");
   });

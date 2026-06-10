@@ -68,7 +68,9 @@ GitHub Actions runs automatically on every pull request targeting `main` using a
 1. `pnpm typecheck`
 2. `pnpm lint`
 3. `pnpm test --coverage`
-4. `visual regression` placeholder job (to be replaced when Storybook visual tests are wired)
+4. `pnpm build`
+5. `pnpm test:e2e`
+6. `visual regression` placeholder job (to be replaced when Storybook visual tests are wired)
 
 Each stage depends on the previous stage, so a failed gate stops the pipeline before the next gate runs.
 Vitest coverage is enforced in `vitest.config.ts` with minimum thresholds of **80% lines** and **80% branches**.
